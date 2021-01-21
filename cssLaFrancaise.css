@@ -27,6 +27,7 @@ html, body {
 .imageheader {
 	width: 400px;
 	height: 266px;
+	object-fit: cover;
 }
 
 .position {
