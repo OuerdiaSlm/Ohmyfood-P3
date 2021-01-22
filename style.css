@@ -57,7 +57,7 @@ h1 {
 	padding-bottom: 40px;
 }
 
-.blockFonctionnement1 {
+.blockFonctionnement {
 	background-color:#F2F2F2; 
 	border-radius: 20px;
 	text-align: center;
@@ -66,23 +66,8 @@ h1 {
 	box-shadow: 0px 0px 10px #c3c8cb;
 	font-weight: bold;
 }
-.blockFonctionnement2 {
-	background-color:#F2F2F2; 
-	border-radius: 20px;
-	text-align: center;
-	padding: 20px;
-	margin-top: 20px;
-	box-shadow: 0px 0px 10px #c3c8cb;
-	font-weight: bold;
-}
-.blockFonctionnement3 {
-	background-color:#9356dc33; 
-	border-radius: 20px;
-	text-align: center;
-	padding: 20px;
-	margin-top: 20px;
-	box-shadow: 0px 0px 10px #c3c8cb;
-	font-weight: bold;
+.blockFonctionnement3 { 
+	background-color:#9356dc33;  
 }
 
 .blockRestaurants{
