@@ -18,17 +18,33 @@ html, body {
 	max-width: 400px;
 }
 
-.logo {
-	margin-left: 85px;
-    margin-right: 85px;
+nav {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	padding: 15px;
+}
+
+
+#retour {
+	margin: 10px;
+	text-align: left;
 }
 
 .position {
 	background-color: #e1e1e1;
-	text-align: center;
 	padding: 15px;
-	box-shadow: 0 -3px 5px -3px #333;}
+	box-shadow: 0 -3px 5px -3px #333;
+	display: flex;
+	justify-content: center;
+}
+
+i {
+	width: 50px;
+	text-align: center;
+}
+
+
 
 .headtitre {
 	background-color: #F2F2F2;
@@ -51,6 +67,15 @@ h1 {
 	margin: 30px;
 }
 
+.btn:hover { 
+	cursor: pointer;
+	transform: scale(0.5);
+	transition-property: transform;
+	transition-duration: 500ms;
+	transform:scale(1.1);
+	background: linear-gradient(173deg, #eeb5e7 3%, #d57fe4 45%, #af62dc 87%, #9356dc 100%);
+}
+
 .fonctionnement {
 	padding: 30px;
 	padding-top: 40px;
@@ -64,8 +89,16 @@ h1 {
 	padding: 20px;
 	margin-top: 20px;
 	box-shadow: 0px 0px 10px #c3c8cb;
-	font-weight: bold;
+	display: flex;
+	justify-content: center;
 }
+
+.blockFonctionnement:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: transform 500ms;
+}
+
 .blockFonctionnement3 { 
 	background-color:#9356dc33;  
 }
@@ -87,19 +120,36 @@ h2 {
 	border-top: 20px;
 	border-radius: 10px 10px 0px 0px;
 }
+.like {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+
+.fa-heart:hover {
+	color: #af62dc;
+	cursor: pointer;
+}
+
+.fa-heart {
+	font-size: 1.5rem;
+}
 
 
 figure div {
 	border-radius: 15px;
 	background-color: white;
-	width: 350px;
 	margin-bottom: 40px;
 }
 
 figure div div {
 	margin-bottom: 0px;
 }
-
+div p {
+	margin: 10px;
+	margin-top: 0px;
+}
 .restaurantsText {
 	padding: 10px;
 }
@@ -110,7 +160,7 @@ footer {
 	padding: 20px;
 }
 
-a {
+a:not(#retour) {
 	text-decoration: none;
 	color: white;
 }

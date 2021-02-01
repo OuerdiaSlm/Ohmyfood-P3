@@ -4,21 +4,27 @@
 	<meta charset="utf-8">
 	<title>À la française</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="cssLaFrancaise.css" rel="stylesheet" type="text/css">
+    <link href="cssCommun.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/bcf24e2998.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<img class="logo" src="images/logo/ohmyfood.svg">
-		<a href="Ohmyfood.html">
-			<img class="imageheader" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+		<a href="ohmyfood.html" id="retour">
+			<i class="fas fa-arrow-left"></i>
 		</a>
+		<img class="logo" src="images/logo/ohmyfood.svg">
 	</header>
 
+	<img class="imageheader" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
 	<figure class="">
-		<h1><i>La note enchantée</i></h1>
-		
-		<div>
-			<p class="epd">ENTREES</p>
+		<div class="like">
+			<h1><i>La note enchantée</i></h1>
+			<i class="fas fa-heart"></i>
+		</div>
+
+
+		<h2 class="epd">ENTREES</h2>
+		<div id="entrees">
 			<div>
 				<h3>Ravioles de foie gras</h3>
 				<span>
@@ -43,8 +49,8 @@
 			</div>
 		</div>
 
-		<div>
-			<p class="epd">PLATS</p>
+		<h2 class="epd">PLATS</h2>
+		<div id="plats">
 			<div>
 				<h3>Noix de coquilles Saint-Jacques</h3>
 				<span>
@@ -68,8 +74,8 @@
 			</div>
 		</div>
 
-		<div>
-			<p class="epd">DESSERTS</p>
+		<h2 class="epd">DESSERTS</h2>
+		<div id="dessers">
 			<div>
 				<h3>Macaron noisette et chocolat</h3>
 				<span>

@@ -18,11 +18,23 @@ html, body {
 	max-width: 400px;
 }
 
-.logo {
-	margin-left: 85px;
-    margin-right: 85px;
+header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	padding: 15px;
 }
+
+
+#retour {
+	margin: 10px;
+	text-align: left;
+	font-size: 22px;
+    position: absolute;
+    left: 10px;
+
+}
+
 
 .imageheader {
 	width: 400px;
@@ -46,9 +58,59 @@ h1 {
 	font-weight: bold;
 }
 
+.like {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.fa-heart:hover {
+	color:#af62dc;
+	cursor: pointer;
+}
+
+.fa-heart {
+	font-size: 1.5rem;
+}
+
 .epd {
 	padding-top: 20px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #99E2D0;
+	width : 50px;
+	font-size: 15px;
+    line-height: 15px;
+}
+
+#plats h2, #entrees > div, #entrees h2, #plats > div, #desserts h2, #desserts > div {
+	opacity: 0;
+	margin-top:20px;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	animation-name:apparition_progressive;
+}
+
+#entrees h2, #entrees > div {
+	animation-delay: 0s;
+} 
+
+#plats h2, #plats > div {
+	animation-delay: 1s;
+}
+
+#desserts h2, #desserts > div{
+	animation-delay: 2s;
+}
+
+@keyframes apparition_progressive {
+	0% {
+		opacity: 0;
+		margin-top: 20px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
+	}
 }
 
 
@@ -97,13 +159,23 @@ b {
 	margin: 30px;
 }
 
+.btn:hover { 
+	cursor: pointer;
+	transform: scale(0.5);
+	transition-property: transform;
+	transition-duration: 500ms;
+	transform:scale(1.1);
+	background: linear-gradient(173deg, #eeb5e7 3%, #d57fe4 45%, #af62dc 87%, #9356dc 100%);
+}
+
+
 
 footer {
 	background-color: #000000cf;
 	padding: 20px;
 }
 
-a {
+a:not(#retour) {
 	text-decoration: none;
 	color: white;
 }
@@ -113,5 +185,14 @@ a p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+
+
+
+
+
+@media screen and (min-width:401px) and (max-width:900px) {
+
 }
 
