@@ -103,6 +103,15 @@ h1 {
 	background-color:#9356dc33;  
 }
 
+.numero {
+	background-color: #9356DC ;
+	border-radius: 50px;
+	color: white;
+	width: 30px;
+	margin-left: -100px;
+	padding-top: 5px;
+}
+
 .blockRestaurants{
 	background-color: #F2F2F2;
 	padding:25px;
