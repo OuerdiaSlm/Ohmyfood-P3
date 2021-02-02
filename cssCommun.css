@@ -54,18 +54,41 @@ header {
 	padding: 30px;
 }
 
-h1 {
+h1 i {
+	font-family: "Shrikhand";
 	font-weight: bold;
 }
 
 .like {
 	display: flex;
 	justify-content: space-between;
-	margin: 10px;
 }
 
+.like div {
+	position: relative;
+	width: 40px;
+}
+
+.like div i {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.like div .fas {
+	-webkit-transform:scale(0);
+	transform: scale(0);
+	color: #af62dc;
+	transition: all 1s ease;
+}
+
+.like div .far:hover + .fas {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
 .fa-heart:hover {
-	color:#af62dc;
 	cursor: pointer;
 }
 
@@ -125,7 +148,8 @@ figure {
 figure div {
 	padding-top: 10px; 
 }
-figure div div {
+
+figure div div:not(.coeur)  {
 	border-radius: 15px;
 	background-color: white;
 	width: 350px;
@@ -175,6 +199,13 @@ footer {
 	padding: 20px;
 }
 
+footer i {
+	font-family: "Shrikhand";
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
 a:not(#retour) {
 	text-decoration: none;
 	color: white;
@@ -192,7 +223,5 @@ a p {
 
 
 
-@media screen and (min-width:401px) and (max-width:900px) {
 
-}
 

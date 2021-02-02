@@ -86,11 +86,10 @@ h1 {
 	background-color:#F2F2F2; 
 	border-radius: 20px;
 	text-align: center;
-	padding: 20px;
+	padding: 25px;
 	margin-top: 20px;
 	box-shadow: 0px 0px 10px #c3c8cb;
 	display: flex;
-	justify-content: center;
 	position: relative;
 }
 
@@ -140,7 +139,6 @@ h2 {
 .like {
 	display: flex;
 	justify-content: space-between;
-	margin: 10px;
 }
 
 .like div {
@@ -185,18 +183,22 @@ figure div {
 figure div div {
 	margin-bottom: 0px;
 }
-div p {
-	margin: 10px;
-	margin-top: 0px;
-}
+
 .restaurantsText {
-	padding: 10px;
+	padding: 15px;
 }
 
 
 footer {
 	background-color: #000000cf;
 	padding: 20px;
+}
+
+footer i {
+	font-family: "Shrikhand";
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 a:not(#retour) {
