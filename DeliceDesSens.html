@@ -6,6 +6,8 @@
 	<title>Le délice des sens</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="cssCommun.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bcf24e2998.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +18,10 @@
 		<img class="logo" src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
 	</header>
 
-	<img class="imageheader" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant Le délice des sens">
+	<div id="imageMenu">
+		<img class="imageheader" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant Le délice des sens">
+	</div>
+
 	<figure class="">
 		<div class="like">
 			<h1>Le délice des sens</h1>
@@ -26,85 +31,91 @@
 			</div>
 		</div>
 
+		<main id="menu">
+			<div id="entrees">
+				<h2 class="epd">ENTREES</h2>
+				<div>
+					<h3>Tartare de thon</h3>
+					<span>
+						<p>Assaisonné au yuzu</p>	
+						<b>25€</b>
+					</span>	
+					
+				</div>
+				<div>
+					<h3>CBouchée de homard croustillant</h3>	
+					<span>
+						<p>Et sa farandole de petits légumes</p>
+						<b>35€</b>
+					</span>
+				</div>			
+				<div>
+					<h3>Velouté de cèpes</h3>	
+					<span>
+						<p>Aux truffes</p>
+						<b>20€</b>
+					</span>
+				</div>
+			</div>
 
-		<h2 class="epd">ENTREES</h2>
-		<div id="entrees">
-			<div>
-				<h3>Tartare de thon</h3>
-				<span>
-					<p>Assaisonné au yuzu</p>	
-					<b>25€</b>
-				</span>	
-				
+			
+			<div id="plats">
+				<h2 class="epd">PLATS</h2>
+				<div>
+					<h3>Poulet roti aux herbes de provence</h3>
+					<span>
+						<p>Et sa crème de truffe</p>
+						<b>40€</b>
+					</span>
+				</div>
+				<div>
+					<h3>Langouste rotie</h3>
+					<span>
+						<p>Et ses légumes de saison</p>	
+						<b>35€</b>
+					</span>
+				</div>			
+				<div>
+					<h3>Cote de boeuf angus</h3>
+					<span>
+						<p>Et sa purée de panais</p>	
+						<b>44€</b>
+					</span>
+				</div>
 			</div>
-			<div>
-				<h3>CBouchée de homard croustillant</h3>	
-				<span>
-					<p>Et sa farandole de petits légumes</p>
-					<b>35€</b>
-				</span>
-			</div>			
-			<div>
-				<h3>Velouté de cèpes</h3>	
-				<span>
-					<p>Aux truffes</p>
-					<b>20€</b>
-				</span>
+
+			
+			<div id="desserts">
+				<h2 class="epd">DESSERTS</h2>
+				<div>
+					<h3>Farandole de desserts</h3>
+					<span>
+						<p>Du chef</p>
+						<b>18€</b>
+					</span>
+				</div>
+				<div>
+					<h3>Crème brulée</h3>
+					<span>
+						<p>Revisitée</p>
+						<b>22€</b>
+					</span>
+				</div>			
+				<div>
+					<h3>Tiramisu</h3>
+					<span><p>DA la noisette</p>
+						<b>23€</b>
+					</span>
+				</div>
 			</div>
+		</main>
+		
+
+		<div id="button">
+			<button class="btn">
+				<h3>Commander</h3>
+			</button>
 		</div>
-
-		<h2 class="epd">PLATS</h2>
-		<div id="plats">
-			<div>
-				<h3>Poulet roti aux herbes de provence</h3>
-				<span>
-					<p>Et sa crème de truffe</p>
-					<b>40€</b>
-				</span>
-			</div>
-			<div>
-				<h3>Langouste rotie</h3>
-				<span>
-					<p>Et ses légumes de saison</p>	
-					<b>35€</b>
-				</span>
-			</div>			
-			<div>
-				<h3>Cote de boeuf angus</h3>
-				<span>
-					<p>Et sa purée de panais</p>	
-					<b>44€</b>
-				</span>
-			</div>
-		</div>
-
-		<h2 class="epd">DESSERTS</h2>
-		<div id="desserts">
-			<div>
-				<h3>Farandole de desserts</h3>
-				<span>
-					<p>Du chef</p>
-					<b>18€</b>
-				</span>
-			</div>
-			<div>
-				<h3>Crème brulée</h3>
-				<span>
-					<p>Revisitée</p>
-					<b>22€</b>
-				</span>
-			</div>			
-			<div>
-				<h3>Tiramisu</h3>
-				<span><p>DA la noisette</p>
-					<b>23€</b>
-				</span>
-			</div>
-		</div>
-
-		<button class="btn">
-			<h3>Commander</h3>
-		</button>
 
 	</figure>
 
