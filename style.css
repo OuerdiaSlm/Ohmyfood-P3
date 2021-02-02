@@ -122,6 +122,7 @@ h1 {
 .blockRestaurants{
 	background-color: #F2F2F2;
 	padding:25px;
+	width: 400px;
 }
 
 h2 {
@@ -192,6 +193,7 @@ figure div div {
 footer {
 	background-color: #000000cf;
 	padding: 20px;
+	width: 400px;
 }
 
 footer i {

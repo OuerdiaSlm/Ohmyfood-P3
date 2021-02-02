@@ -54,9 +54,10 @@ header {
 	padding: 30px;
 }
 
-h1 i {
+h1 {
 	font-family: "Shrikhand";
 	font-weight: bold;
+	font-style: italic;
 }
 
 .like {
