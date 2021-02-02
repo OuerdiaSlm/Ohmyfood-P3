@@ -91,6 +91,7 @@ h1 {
 	box-shadow: 0px 0px 10px #c3c8cb;
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 
 .blockFonctionnement:hover {
@@ -108,8 +109,15 @@ h1 {
 	border-radius: 50px;
 	color: white;
 	width: 30px;
-	margin-left: -100px;
-	padding-top: 5px;
+	position: absolute;
+	top: 50%;
+	left:0;
+	height:30px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .blockRestaurants{
@@ -135,9 +143,31 @@ h2 {
 	margin: 10px;
 }
 
+.like div {
+	position: relative;
+	width: 40px;
+}
+
+.like div i {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.like div .fas {
+	-webkit-transform:scale(0);
+	transform: scale(0);
+	color: #af62dc;
+	transition: all 1s ease;
+}
+
+.like div .far:hover + .fas {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 
 .fa-heart:hover {
-	color: #af62dc;
 	cursor: pointer;
 }
 
