@@ -15,7 +15,6 @@ body {
 
 html, body {
 	height: 100%;
-	max-width: 100%;
 }
 
 nav {
@@ -23,6 +22,7 @@ nav {
 	justify-content: center;
 	text-align: center;
 	padding: 15px;
+	border-bottom: 1px solid #b1b1b1;
 }
 
 
@@ -34,7 +34,6 @@ nav {
 .position {
 	background-color: #e1e1e1;
 	padding: 15px;
-	box-shadow: 0 -3px 5px -3px #333;
 	display: flex;
 	justify-content: center;
 }
@@ -79,7 +78,9 @@ h1 {
 .fonctionnement {
 	padding: 30px;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 70px;
+	max-width: 1500px;
+	margin: auto;
 }
 
 .blockFonctionnement {
@@ -122,6 +123,8 @@ h1 {
 .blockRestaurants{
 	background-color: #F2F2F2;
 	padding:25px;
+	max-width: 1500px;
+	margin: auto;
 }
 
 h2 {
@@ -130,7 +133,7 @@ h2 {
 }
 
 .blockRestaurants img {
-	width: 350px;
+	width: 400px;
 	height: 233px;
 	object-fit: cover;
 	border-top: 20px;
@@ -138,12 +141,11 @@ h2 {
 }
 
 main {
-	width: 350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+	max-width: 1150px;
 }
 
 .like {
@@ -205,6 +207,11 @@ footer {
 	padding: 20px;
 }
 
+footer div {
+    max-width: 1500px;
+    margin: auto;
+}
+
 footer i {
 	font-family: 'Shrikhand', cursive;
 	color: white;
@@ -222,4 +229,3 @@ a p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-

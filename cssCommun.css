@@ -15,7 +15,7 @@ body {
 
 html, body {
 	height: 100%;
-	width: 100%
+	width: 100%;
 }
 
 header {
@@ -23,11 +23,13 @@ header {
 	justify-content: center;
 	text-align: center;
 	padding: 15px;
+	border-bottom: 1px solid #b1b1b1;
 }
 
 
 #imageMenu {
-	width: 100%;
+	max-width: 1500px;
+    margin: auto;
 }
 
 #retour {
@@ -118,6 +120,7 @@ h1 {
 	width : 50px;
 	font-size: 15px;
     line-height: 15px;
+	margin-bottom: 20px;
 }
 
 #plats h2, #entrees > div, #entrees h2, #plats > div, #desserts h2, #desserts > div {
@@ -158,6 +161,10 @@ figure {
 	margin-top: -40px;
 	position: relative;
 	padding: 20px;
+	padding-bottom: 50px;
+	max-width: 1500px;
+    margin-right: auto;
+	margin-left:auto;
 }
 figure div {
 	padding-top: 10px; 
@@ -188,6 +195,7 @@ b {
 	margin: auto;
     display: flex;
     justify-content: center;
+        padding: 50px;
 }
 
 .btn {
@@ -216,6 +224,11 @@ footer {
 	padding: 20px;
 }
 
+footer div {
+    max-width: 1500px;
+    margin: auto;
+}
+
 footer i {
 	font-family: 'Shrikhand', cursive;
 	color: white;
@@ -234,15 +247,6 @@ a p {
     margin-inline-end: 0px;
 }
 
-
-@media screen (min-width: 800) and (max-width: 2400px) {
-	body {
- 	background-color: white; 
- 	font-family: "Roboto", sans-serif; 
- 	padding-right: 40px;
- 	padding-left: 40px
-}
-}
 
 
 
