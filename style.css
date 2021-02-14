@@ -148,6 +148,22 @@ main {
 	max-width: 1150px;
 }
 
+main div {
+	position: relative;
+}
+
+.restaurant__nouveau {
+    padding: 7px;
+    margin: 15px;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: #2cb291;
+    background-color: #91d6c5;
+    font-weight: bold;
+}
+
 .like {
 	display: flex;
 	justify-content: space-between;

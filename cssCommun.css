@@ -65,6 +65,8 @@ h1 {
 	font-style: italic;
 }
 
+
+
 .like {
 	width: 100%;
 	display: flex;
@@ -155,7 +157,7 @@ h1 {
 }
 
 
-figure {
+section {
 	background-color: #F2F2F2;
 	border-radius: 40px 40px 0px 0px;
 	margin-top: -40px;
@@ -166,23 +168,135 @@ figure {
     margin-right: auto;
 	margin-left:auto;
 }
-figure div {
-	padding-top: 10px; 
-	width: 350px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+  
+  display:flex;
+  align-item:center;
+  overflow-x:hidden;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #cacaca;
+  height: 70px;
+  width: 350px;
 }
 
-figure div div:not(.coeur)  {
-	border-radius: 15px;
+#container *{
+  flex-grow:1;
+  flex-shrink:1;
+}
+
+.prix {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-items: flex-end;
+  display:flex;
+  justify-content:flex-end;
+}
+
+
+.description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: flex-end;
+}
+
+h3 {
+	width: 100%;
+}
+
+
+.prix-valide {
+  display: flex;
+  transition:all 1s ease;
+  transform: translateX(80px);
+}
+
+
+#valide  {
+  background:#99E2D0;
+  width:80px;
+  height: 70px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:all 1s ease;
+  transform: translateX(20px);
+  position: relative;
+  top: -15px;
+  color:white;
+}
+
+
+.validerond {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.validerond i {
+	width: 30px;
+	height: 30px;
 	background-color: white;
-	margin-bottom: 10px;
-	padding: 15px;
-	box-shadow: 0px 0px 10px #cacaca;
+	border-radius: 50%;
+	color: #99E2D0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-figure div div span {
-	padding: 0px;	
-	display: flex;
+
+
+#container:hover .prix-valide{
+  transform:translate(0);
 }
+
+#container:hover #valide i{
+  animation:rotate 2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform:rotate(-180deg);
+  }
+  100% {
+    tranform:rotate(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 b {
 	display: flex;
