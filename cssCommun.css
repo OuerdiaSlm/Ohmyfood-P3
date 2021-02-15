@@ -65,7 +65,11 @@ h1 {
 	font-style: italic;
 }
 
-
+.valide {
+	background-color: #91d6c5;
+	width: 100px;
+	height: 100%;
+}
 
 .like {
 	width: 100%;
@@ -193,7 +197,8 @@ section {
   padding: 15px;
   box-shadow: 0px 0px 10px #cacaca;
   height: 70px;
-  width: 350px;
+  width: 400px;
+  overflow-y: hidden;
 }
 
 #container *{
@@ -202,25 +207,40 @@ section {
 }
 
 .prix {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  
   align-items: flex-end;
   display:flex;
   justify-content:flex-end;
+  margin-left: -100px;
+
+
 }
 
 
+#container:hover  p{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 240px;
+}
+
+#container:hover .valide {
+	opacity: 1;
+}
+
+.test {
+	width: 250px;
+}
+
 .description {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   align-items: flex-end;
 }
 
-h3 {
-	width: 100%;
-}
 
+
+ h3{
+	font-size: 17px;
+}
 
 .prix-valide {
   display: flex;
@@ -229,7 +249,7 @@ h3 {
 }
 
 
-#valide  {
+.valide  {
   background:#99E2D0;
   width:80px;
   height: 70px;
@@ -241,6 +261,7 @@ h3 {
   position: relative;
   top: -15px;
   color:white;
+  opacity: 0;
 }
 
 
@@ -269,7 +290,7 @@ h3 {
   transform:translate(0);
 }
 
-#container:hover #valide i{
+#container:hover .valide i{
   animation:rotate 2s;
 }
 
