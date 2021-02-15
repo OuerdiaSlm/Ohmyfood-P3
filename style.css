@@ -59,6 +59,8 @@ h1 {
 	border-radius: 30px;
 	border: none;
 	background: linear-gradient(173deg, #f59dea   3%, #d562e9   45%, #aa56dc  87%, #9356dc  100%);
+	box-shadow: 0px 4px 7px rgb(182, 182, 182);
+	transition: box-shadow 100ms linear;
 	text-decoration-color: white;
 	padding: 20px;
 	width: 250px;
@@ -73,6 +75,7 @@ h1 {
 	transition-duration: 500ms;
 	transform:scale(1.1);
 	background: linear-gradient(173deg, #eeb5e7 3%, #d57fe4 45%, #af62dc 87%, #9356dc 100%);
+	box-shadow: 0px 10px 7px rgb(182, 182, 182);
 }
 
 .fonctionnement {
