@@ -28,7 +28,7 @@ header {
 
 
 #imageMenu {
-	max-width: 1500px;
+	max-width: 1400px;
     margin: auto;
 }
 
@@ -168,7 +168,7 @@ section {
 	position: relative;
 	padding: 20px;
 	padding-bottom: 50px;
-	max-width: 1500px;
+	max-width: 1400px;
     margin-right: auto;
 	margin-left:auto;
 }
@@ -362,7 +362,7 @@ footer {
 }
 
 footer div {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: auto;
 }
 
