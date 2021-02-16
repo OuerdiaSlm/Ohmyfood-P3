@@ -187,9 +187,7 @@ section {
 
 
 #container{
-  
   display:flex;
-  align-item:center;
   overflow-x:hidden;
   border-radius: 15px;
   background-color: white;
@@ -207,14 +205,13 @@ section {
 }
 
 .prix {
-  
   align-items: flex-end;
   display:flex;
   justify-content:flex-end;
   margin-left: -100px;
-
-
+  font-weight: bold;
 }
+
 #container:hover {
 	cursor: pointer;
 }
