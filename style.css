@@ -294,10 +294,20 @@ footer div {
     margin: auto;
 }
 
-footer i {
+.logo-blanc {
 	font-family: 'Shrikhand', cursive;
 	color: white;
 	font-size: 2em;
+}
+
+.info-flex {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.info-flex i{
+	width: 40px;
 }
 
 a:not(#retour) {
