@@ -304,10 +304,11 @@ footer div {
 	display: flex;
 	align-items: center;
 	color: white;
+	height: 40px;
 }
 
 .info-flex i{
-	width: 30px;
+	width: 40px;
 }
 
 a:not(#retour) {
