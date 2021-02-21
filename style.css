@@ -151,7 +151,7 @@ h1 {
 	text-align: center;
 	padding: 25px;
 	margin-top: 20px;
-	box-shadow: 0px 0px 10px #c3c8cb;
+	box-shadow: 0px 4px 7px rgb(182 182 182);
 	display: flex;
 	position: relative;
 }
