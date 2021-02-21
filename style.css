@@ -322,3 +322,23 @@ a p {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+
+	.container {
+		width: 95%;
+	}
+
+	.blockRestaurants img {
+    	width: 100%;
+	}
+
+	.btn {
+		max-width: 250px;
+    	width: 90%;
+    	margin: 0px;
+    	margin-top: 30px;
+    	margin-bottom: 30px;
+	}
+
+} 
