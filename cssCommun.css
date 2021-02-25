@@ -65,11 +65,6 @@ h1 {
 	font-style: italic;
 }
 
-.valide {
-	background-color: #91d6c5;
-	width: 100px;
-	height: 100%;
-}
 
 .like {
 	width: 100%;
@@ -88,6 +83,7 @@ h1 {
 	top: 0;
 }
 
+/* Disparition...Annimation Coeur (Etat initial=0)*/
 .like div .fas {
 	-webkit-transform:scale(0);
 	transform: scale(0);
@@ -95,11 +91,11 @@ h1 {
 	transition: all 1s ease;
 }
 
+/* DEBUT...Apparition...Annimation Coeur (Etat finale=1)*/
 .like div .far:hover + .fas {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
 
 .fa-heart:hover {
 	cursor: pointer;
@@ -108,10 +104,9 @@ h1 {
 .fa-heart {
 	font-size: 1.5rem;
 }
+/* FIN...Apparition...Annimation Coeur (Etat finale=1)*/
 
-.coeur {
 
-}
 
 #menu {
     display: flex;
@@ -149,6 +144,7 @@ h1 {
 	animation-delay: 2s;
 }
 
+/*DEBUT... Apparition progressive du menu */
 @keyframes apparition_progressive {
 	0% {
 		opacity: 0;
@@ -159,6 +155,7 @@ h1 {
 		margin-top: 0px;
 	}
 }
+/*FIN... Apparition progressive du menu */
 
 
 #container {
@@ -175,38 +172,30 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
 .container-petit{
-  display:flex;
-  overflow-x:hidden;
-  border-radius: 15px;
-  background-color: white;
-  margin-bottom: 10px;
-  padding: 15px;
-  box-shadow: 0px 0px 10px #cacaca;
-  height: 70px;
-  width: 400px;
-  overflow-y: hidden;
+  	display:flex;
+  	overflow-x:hidden;
+  	border-radius: 15px;
+  	background-color: white;
+  	margin-bottom: 10px;
+  	padding: 15px;
+  	box-shadow: 0px 0px 10px #cacaca;
+  	height: 70px;
+  	width: 400px;
+  	overflow-y: hidden;
 }
 
 .container-petit *{
-  flex-grow:1;
-  flex-shrink:1;
+    flex-grow:1;
+    flex-shrink:1;
 }
 
 .prix {
-  align-items: flex-end;
-  display:flex;
-  justify-content:flex-end;
-  margin-left: -100px;
-  font-weight: bold;
+    align-items: flex-end;
+    display:flex;
+    justify-content:flex-end;
+    margin-left: -100px;
+    font-weight: bold;
 }
 
 .container-petit:hover {
@@ -229,7 +218,7 @@ h1 {
 }
 
 .description {
-  align-items: flex-end;
+	align-items: flex-end;
 }
 
 
@@ -239,25 +228,25 @@ h1 {
 }
 
 .prix-valide {
-  display: flex;
-  transition:all 1s ease;
-  transform: translateX(80px);
+    display: flex;
+    transition:all 1s ease;
+    transform: translateX(80px);
 }
 
 
 .valide  {
-  background:#99E2D0;
-  width:50px;
-  height: 70px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  transition:all 1s ease;
-  transform: translateX(20px);
-  position: relative;
-  top: -15px;
-  color:white;
-  opacity: 0;
+	background:#99E2D0;
+	width:50px;
+	height: 70px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition:all 1s ease;
+	transform: translateX(20px);
+	position: relative;
+	top: -15px;
+	color:white;
+	opacity: 0;
 }
 
 
@@ -283,22 +272,24 @@ h1 {
 
 
 .container-petit:hover .prix-valide{
-  transform:translate(0);
+    transform:translate(0);
 }
 
+/* DEBUT... Annimation Icon check (petit rond blanc) */
 .container-petit:hover .valide i{
-  animation:rotate 1s;
+    animation:rotate 600ms linear;
 }
+
 
 @keyframes rotate {
-  0% {
-    transform:rotate(-180deg);
-  }
-  100% {
-    transform:rotate(0deg);
-  }
+	from { 
+		transform: rotate(0deg); 
+		} 
+	to { 
+		transform: rotate(360deg); 
+		}
 }
-
+/* FIN... Annimation Icon check (petit rond blanc) */
 
 
 
@@ -313,7 +304,7 @@ b {
 	margin: auto;
     display: flex;
     justify-content: center;
-        padding: 50px;
+    padding: 50px;
 }
 
 .btn {

@@ -37,6 +37,7 @@
     top: 0; left: 0; right: 0; bottom: 0;
 }
 
+/* DEBUT... Annimation Loader */
 @keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -60,6 +61,7 @@
         z-index: 4;
     }
 }
+/* FIN... Annimation Loader */
 
 body {
  	background-color: white; 
@@ -246,6 +248,7 @@ h2 {
 	top: 0;
 }
 
+/* Disparition...Annimation Coeur (Etat initial=0)*/
 .like div .fas {
 	-webkit-transform:scale(0);
 	transform: scale(0);
@@ -253,11 +256,11 @@ h2 {
 	transition: all 1s ease;
 }
 
+/* DEBUT...Apparition...Annimation Coeur (Etat finale=1)*/
 .like div .far:hover + .fas {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
 
 .fa-heart:hover {
 	cursor: pointer;
@@ -266,7 +269,7 @@ h2 {
 .fa-heart {
 	font-size: 1.5rem;
 }
-
+/* FIN...Apparition...Annimation Coeur (Etat finale=1)*/
 
 main div {
 	border-radius: 15px;
