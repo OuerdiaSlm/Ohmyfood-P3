@@ -322,7 +322,6 @@ b {
 
 .btn:hover { 
 	cursor: pointer;
-	transform: scale(0.5);
 	transition-property: transform;
 	transition-duration: 500ms;
 	transform:scale(1.1);
